@@ -47,7 +47,7 @@ public class LoginActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
-                request = new StringRequest(Request.Method.POST, URL, new JSONObject(new LoginActivity().getParams()), new Response.Listener<String>() {
+                request = new StringRequest(Request.Method.POST, URL, new Response.Listener<String>() {
                     @Override
                     public void onResponse(String response) {
                         try {
