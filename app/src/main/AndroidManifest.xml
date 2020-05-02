@@ -23,8 +23,8 @@
         <activity android:name=".Homepage_nav"/>
         <activity android:name=".LoginActivity"/>
         <activity android:name=".login_withoutcode"/>
-        <activity android:name=".SplashScreen"/>
-            <activity android:name=".LoginPage">
+            <activity android:name=".LoginPage"/>
+                <activity android:name=".SplashScreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

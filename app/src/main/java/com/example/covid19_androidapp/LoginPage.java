@@ -49,6 +49,7 @@ public class LoginPage extends AppCompatActivity {
             public void onClick(View v) {
                 if ((etEmail.getText().toString().trim().equals("")))
                 {
+                    etEmail.setError("Field can't be empty");
                     Toast.makeText(getApplicationContext(), "User name is empty", Toast.LENGTH_SHORT).show();
 
                 }else if ((etPassword.getText().toString().trim().equals("")))

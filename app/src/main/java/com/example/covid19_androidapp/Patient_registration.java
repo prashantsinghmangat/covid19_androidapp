@@ -64,16 +64,19 @@ public class Patient_registration extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 if ((age.getText().toString().trim().equals(""))) {
+                    age.setError("Field can't be empty");
                     Toast.makeText(getApplicationContext(), "Age is empty", Toast.LENGTH_SHORT).show();
 
                 }
                 else if ((gender.getText().toString().trim().equals(""))) {
+                    gender.setError("Field can't be empty");
                     Toast.makeText(getApplicationContext(), "Gender is empty", Toast.LENGTH_SHORT).show();
 
                 }else if ((state.getText().toString().trim().equals(""))) {
+                    state.setError("Field can't be empty");
                     Toast.makeText(getApplicationContext(), "State is empty", Toast.LENGTH_SHORT).show();
 
-                }else {
+                } else {
                     spinner.setVisibility(View.VISIBLE);
                     String Patient_name = patient_name.getText().toString();
                     String Age = age.getText().toString();

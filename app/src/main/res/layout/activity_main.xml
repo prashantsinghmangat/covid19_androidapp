@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#DCDCDC"
     tools:context=".LoginPage">
 
     <View
@@ -17,16 +18,17 @@
     </View>
 
     <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="120dp"
-        android:layout_height="120dp"
-        android:src="@drawable/dummylogo"
-        app:layout_constraintBottom_toBottomOf="@+id/viewimage"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.869"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/viewimage"
-        app:layout_constraintVertical_bias="1.0" />
+    android:id="@+id/imageView"
+    android:layout_width="150dp"
+    android:layout_height="150dp"
+    android:src="@drawable/ic_surgeon_doctor_svgrepo_com"
+    app:layout_constraintBottom_toBottomOf="@+id/viewimage"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.0"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="@+id/viewimage"
+    app:layout_constraintVertical_bias="1.0" />
+
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/Usernameshow"

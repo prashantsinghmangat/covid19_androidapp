@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#DCDCDC"
     tools:context=".Patient_registration">
 
     <View
@@ -81,8 +82,11 @@
                         android:textStyle="bold" />
 
                     <RadioGroup
+                        android:id="@+id/Anosmia_group"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginBottom="8dp"
                         android:layout_marginTop="16dp">
 
                         <RadioButton
@@ -97,6 +101,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="16dp"
+                            android:layout_marginBottom="8dp"
                             android:layout_marginLeft="16dp"
                             android:text="Cannot smell well">
                         </RadioButton>
@@ -176,7 +181,7 @@
                             android:layout_height="wrap_content"
                             android:layout_marginTop="16dp"
                             android:layout_marginRight="8dp"
-                            android:text="No fever">
+                            android:text="100-102">
                         </RadioButton>
 
                         <RadioButton
@@ -184,14 +189,14 @@
                             android:layout_height="wrap_content"
                             android:layout_marginTop="16dp"
                             android:layout_marginLeft="16dp"
-                            android:text="98.4 - 100">
+                            android:text="102 - 104">
                         </RadioButton>
                         <RadioButton
                             android:layout_width="150dp"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="16dp"
                             android:layout_marginLeft="16dp"
-                            android:text="98.4 - 100">
+                            android:text=">104">
                         </RadioButton>
                     </RadioGroup>
 
@@ -1152,14 +1157,16 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="16dp"
                         android:layout_marginLeft="16dp"
-                        android:text="No contact histor"></RadioButton>
+                        android:text="No contact history">
+                    </RadioButton>
 
                     <RadioButton
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="16dp"
                         android:layout_marginLeft="16dp"
-                        android:text="Direct travel history"></RadioButton>
+                        android:text="Direct travel history">
+                    </RadioButton>
 
 
                     <RadioButton
@@ -1167,21 +1174,24 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="16dp"
                         android:layout_marginLeft="16dp"
-                        android:text="No international travel history"></RadioButton>
+                        android:text="No international travel history">
+                    </RadioButton>
 
                     <RadioButton
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="16dp"
                         android:layout_marginLeft="16dp"
-                        android:text="No international travel history ( >14 days)"></RadioButton>
+                        android:text="No international travel history ( >14 days)">
+                    </RadioButton>
 
                     <RadioButton
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="16dp"
                         android:layout_marginLeft="16dp"
-                        android:text="No international travel history (14 days)"></RadioButton>
+                        android:text="No international travel history (More then 14 days)">
+                    </RadioButton>
 
                     </RadioGroup>
                 </LinearLayout>
@@ -1221,8 +1231,8 @@
 
                     <RadioGroup
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content">
-
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
 
                     <RadioButton
                         android:layout_width="match_parent"
