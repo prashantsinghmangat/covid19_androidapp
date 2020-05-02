@@ -20,11 +20,11 @@
         <activity android:name=".Logout_navigation" />
         <activity android:name=".ProfileFragment" />
         <activity android:name=".finalsumit" />
-        <activity android:name=".LoginPage" />
         <activity android:name=".Homepage_nav"/>
         <activity android:name=".LoginActivity"/>
-        <activity android:name=".Welcome"/>
-        <activity android:name=".SplashScreen">
+        <activity android:name=".login_withoutcode"/>
+        <activity android:name=".SplashScreen"/>
+            <activity android:name=".LoginPage">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

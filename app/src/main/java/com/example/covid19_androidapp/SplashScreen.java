@@ -29,7 +29,7 @@ public class SplashScreen extends AppCompatActivity {
             } catch (InterruptedException e){
                 e.printStackTrace();
             }
-            Intent intent = new Intent(SplashScreen.this, LoginActivity.class);
+            Intent intent = new Intent(SplashScreen.this, LoginPage.class);
             startActivity(intent);
             SplashScreen.this.finish();
         }

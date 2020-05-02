@@ -35,20 +35,19 @@ public class screen_patient_home extends Fragment {
                 startActivity(intent);
             }
         });
-        button1 = (Button) view.findViewById(R.id.withoutregister);
+        /*button1 = (Button) view.findViewById(R.id.withoutregister);
         button1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent= new Intent(getActivity(), patient_health_details.class);
                 startActivity(intent);
             }
-        });
+        });*/
 
         spinnerMhe = view.findViewById(R.id.spinner);
 
         List<String> categories = new ArrayList<>();
-        categories.add(0,"Select Protocol");
-        categories.add("Protocol A");
+        categories.add(0,"Protocol A");
         categories.add("Protocol K-001");
         categories.add("Protocol K-002");
         categories.add("Protocol K-003");
